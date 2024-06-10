@@ -1,0 +1,606 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: PT Sans;
+  background-color: #f2f2f2;
+}
+
+.shopname{
+  margin-top: 20px;
+  font-size: larger;
+}
+
+.vegetablepage{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./homepageimages/8.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+p{
+  color: #606066;
+}
+
+.logo{
+  width: 65px;
+  height: 65px;
+  margin: 0px 0px 0px 0px;
+  
+  
+}
+
+/* nav bar styling starts here*/
+nav{
+  display: flex;
+  text-align: left;
+  align-items: center;
+  background-color:#ED1b24;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 70px;
+  
+}
+
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 4px 3px;
+  margin-left: 95px;
+  margin-top: 10px;
+  
+  
+  
+  
+}
+
+.nav-links ul li a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  
+}
+
+.nav-links ul li::after{
+ content: '';
+ width: 0%;
+ height: 2px;
+ background: #ffffff;
+ display: block;
+ margin: auto;
+ transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width: 90%;
+}
+
+.text-box{
+  width: 98%;
+  color:#f2f2f2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.text-box h1{
+  font-size: 62px;
+}
+
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.home-button{
+background-color: #b33238;
+color: rgb(255, 255, 255);
+font-size: 20px;
+border: none;
+border-top-right-radius: 20px;
+border-bottom-left-radius: 20px;
+padding: 10px 50px;
+cursor: pointer;
+
+}
+
+.home-button:hover{
+  border: 1px soild #ffffff;
+  background: #ED1b24;
+  transition: 1s;
+
+}
+nav .fa{
+  display: none;
+}
+
+
+/* vegetable items layount using grid method*/
+.vegetableprodcuts{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+
+/*creating horizontal line */
+
+
+
+.topic{
+  overflow: hidden;
+  text-align: center;
+  
+}
+
+.topic:before,
+.topic:after{
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 35%;
+
+}
+
+.topic:before{
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.topic:after{
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+
+
+
+
+
+/* responsive the menubar*/
+
+@media (max-width:768px){
+  .text-box h1{
+    font-size: 55px;
+  }
+
+  
+
+  .logo{
+    display: none;
+  }
+
+  .nav-links ul li{
+    display: block;
+
+  }
+
+  .nav-links{
+    position: absolute;
+    background:#050505;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index:2;
+  }
+  .nav-links ul li{
+    
+    margin-left: 5px;
+    
+}
+
+
+.nav-links ul li a{
+
+  font-size: 12px;
+  
+  
+}
+
+ nav .fa{
+    display:block;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-links ul{
+  padding: 30px;
+}
+
+
+/* responsive vegetables items using a flex method*/
+.vegetableprodcuts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  margin-bottom: 20px;
+}
+
+}
+
+
+/* items */
+
+.item{
+  width: 170px;
+  height: 180px;
+  margin-left: 18px;
+}
+
+
+
+
+
+.price{
+  color:#606060;
+}
+.itemname{
+  padding-left: 52px;
+  margin-bottom: 15px;
+}
+
+.itemprice{
+  padding-left: 28px;
+  margin-bottom: 20px;
+}
+
+.button{
+  padding-left: 45px;
+  
+  
+  
+ 
+}
+
+.addtocart{
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+  
+}
+
+.addtocartbutton{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: none;
+  border-style: none;
+  background-color: #ED1b24;
+  color:aliceblue;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 0px 2px 2px rgb(61, 61, 61);
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 40px;
+  
+  
+  
+  
+}
+
+
+.itemcontainer{
+  
+  margin-left: 80px;
+  padding-left: 20px;
+  background-color:rgb(248, 248, 248);
+  border-radius: 20px;
+  margin-right: 80px;
+  }
+
+
+.itemcontainer:hover{
+
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  transition: 0.5s;
+  transform: translateY(-5px);
+  
+}
+
+
+
+
+
+
+.text{
+  padding-left: 5px;
+}
+
+
+
+
+
+
+/*vegetables supply places*/
+
+
+.supplierphoto{
+  width: 300px;
+  height: 300px;
+  border: 1px;
+  background-color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+}
+
+.districtvegetables{
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* styles for loyal rgeistrtaion*/
+a{
+  text-decoration: none;
+}
+
+#testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  
+}
+
+
+.testimonials-header{
+  letter-spacing: 1px;
+  margin: 30px 20px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.testimonials-header h1{
+  font-size: 2.2rem;
+  font-weight: 500;
+  background-color: #ED1B24;
+  color: #ffffffff;
+  padding: 10px 20px;
+}
+
+.testimonials-header span{
+  font-size: 1.3rem;
+  color: #252525;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.testimonials-box-conatiner{
+  width:80%;
+  height: auto;
+  
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+   background-color: #ffffffff;
+   padding: 20px;
+   margin: 20px 40px;
+   cursor: pointer;
+   
+
+
+}
+
+.profile-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile{
+  display: flex;
+  align-items: center;
+
+}
+
+.name-user{
+  display: flex;
+  flex-direction: column;
+}
+
+.name-user strong{
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.name-user span{
+  color: #979797;
+
+}
+
+.reviews{
+  color: red;
+}
+
+.box-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.client-comment p{
+  font-size: 0.9rem;
+  color: #4b4b4b;
+
+ 
+
+
+}
+
+/* footer styling stats here*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+
+ul{
+  list-style: none;
+}
+
+
+
+.icon{
+  width: 20px;
+  height: 20px;
+}
+
+.footer{
+  background-color: #ED1B24;
+  padding: 70px 0;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+
+}
+
+.socialmedia{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
+}
+
+.footer-col h4{
+  font-size: 18;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  font-weight: 500;
+  position: relative;
+
+}
+
+.footer-col h4::before{
+  content:'' ;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: rgb(252, 255, 251);
+  height: 2px;
+  box-sizing: border-box;
+  width: 60px;
+}
+
+.footer-col ul li a{
+  font-size: 15px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 500;
+  color:white;
+  display: block;
+  transition: all 0.5s ease;
+  margin-bottom: 10px;
+
+}
+
+.footer-col ul li a:hover{
+  color: rgb(227, 109, 109);
+  padding-left: 6px;
+}
+
+
+/* responsive the footer*/
+@media(max-width:768px){
+  .footer-col{
+    width:100%;
+    height: auto;
+    text-align: center;
+  }
+  .footer-col h4{
+    margin-top: 50px;
+    
+  }
+
+  .footer-col h4::before{
+
+    width: 50px;
+    margin-left: 170px;
+  }
+
+.icon{
+  margin-left: 60px;
+}
+
+
+.socialmedia li{
+  margin-left: 80px;
+}
+}
+
+
+
+
+
+.labelicons{
+  
+  width:50px;
+  height: 50px;
+}
+
+.discountlabel{
+ 
+  right: 0;
+  top: 15px;
+  
+}
+
+
+/*vegetablessupplier photos */
+.supplierphoto{
+  width: 100%;
+  height: auto;
+}
