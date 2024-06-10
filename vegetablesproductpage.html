@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!---links for google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vegetables Page</title>
+  <link rel="stylesheet" href="./vegetablesproductpage.css">
+  <!--fontawsome for icons-->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body >
+  <section class="vegetablepage">
+    <nav id="top">
+      <a href="./index.html"><img   style="margin: 0px 0px 0px 10px ;"class="logo" src="./homepageimages/logo.webp"></a>
+      <section class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+       <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./aboutuspage.html">About Us</a></li>
+        <li><a href="./vegetablesproductpage.html">Vegetable Items</a></li>
+        <li><a href="./Dairypage.html">Dairy Items</a></li>
+        <li><a href="./cosmeticspage.html">Cosmetic Items</a></li>
+        <li><a href="./Orderpage.html">Order Page</a></li>
+        <li><a href="./Registerpage.html">Registration Page</a></li>
+      </ul>
+
+      </section>
+    
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<section class="text-box">
+<h1  class="shopname">Vegetables Section</h1>
+<p class="intropara">Step into our vegetable section and immerse yourself in a world of freshness and flavor.<br> 
+  At our store, we take pride in offering a wide variety of locally sourced, farm-fresh vegetables that are bursting with nutrients and flavor.
+  
+  </p>
+<button  class="home-button">Visit Us</button>
+</section>
+</section>
+  
+
+<!---javascript for on and show menubar button icons-->
+ <script>
+
+  var navLinks = document.getElementById("navLinks");
+ 
+ function showMenu(){
+   navLinks.style.right = "0";
+
+}
+
+function hideMenu(){
+   navLinks.style.right = "-200px";
+   
+}
+</script>
+
+<!---storing vegetable items -->
+<section style="margin-top: 20px;" class="vegetableprodcuts">
+  <section style=" position: relative;" class="itemcontainer">
+    <img class="item" src="./newimages/1.webp">
+    <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/1.webp">
+    </section>
+    <section class="itemname">Bellapper 100g</section>
+    <section class="itemprice"><s>Rs.100.00</s> <span class="price">Rs.50.00</span> </section>
+  
+    <a href="./loginpage.html"><button class="addtocartbutton">
+      <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+      </button></a>
+    </section>
+    <section style=" position: relative;" class="itemcontainer">
+      <img class="item" src="./newimages/2.webp">
+      <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/1.webp">
+      </section>
+      <section class="itemname">Purple cabbage 100g</section>
+      <section class="itemprice"><s>Rs.300.00</s> <span class="price">Rs.250.00</span> </section>
+    
+      <a href="./loginpage.html"><button class="addtocartbutton">
+        <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+        </button></a>
+      </section>
+    <section style=" position: relative;" class="itemcontainer">
+      <img class="item" src="./vegitables/1.webp">
+      <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/1.webp">
+      </section>
+      <section class="itemname">Carrots 100g</section>
+      <section class="itemprice"><s>Rs.100.00</s> <span class="price">Rs.50.00</span> </section>
+    
+      <a href="./loginpage.html"><button class="addtocartbutton">
+        <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+        </button></a>
+      </section>
+    <section style=" position: relative;" class="itemcontainer">
+      <img class="item" src="./vegitables/5.webp">
+      <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/1.webp">
+      </section>
+      <section class="itemname">Green Chilli 100g</section>
+      <section class="itemprice"><s>Rs.60.00</s> <span class="price">Rs.30.00</span> </section>
+    
+      <a href="../html files/loginpage.html"><button class="addtocartbutton">
+        <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+        </button></a>
+      </section>
+      <section style=" position: relative;" class="itemcontainer">
+        <img class="item" src="./vegitables/4.webp">
+        <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/1.webp">
+        </section>
+        <section class="itemname">Beans</section>
+        <section class="itemprice"><s>Rs.180.00</s> <span class="price">Rs.110.00</span> </section>
+      
+        <a href="../html files/loginpage.html"><button class="addtocartbutton">
+          <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+          </button></a>
+        </section>
+        <section style=" position: relative;" class="itemcontainer">
+          <img class="item" src="./vegitables/3.webp">
+          <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/2.webp">
+          </section>
+          <section class="itemname">Cucumber 100g</section>
+          <section class="itemprice"><s>Rs.280.00</s> <span class="price">Rs.150.00</span> </section>
+        
+          <a href="../html files/loginpage.html"><button class="addtocartbutton">
+            <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+            </button></a>
+          </section>
+          <section style=" position: relative;" class="itemcontainer">
+            <img class="item" src="./vegitables/2.webp">
+            <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/1.webp">
+            </section>
+            <section class="itemname">Cabbage 100g</section>
+            <section class="itemprice"><s>Rs.250</s> <span class="price">Rs.150.00</span> </section>
+          
+            <a href="../html files/loginpage.html"><button class="addtocartbutton">
+              <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+              </button></a>
+            </section>
+            <section style=" position: relative;" class="itemcontainer">
+              <img class="item" src="./vegitables/7.webp">
+              <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/2.webp">
+              </section>
+              <section class="itemname">Pumkin 100g</section>
+              <section class="itemprice"><s>Rs.380.00</s> <span class="price">Rs.250.00</span> </section>
+            
+              <a href="../html files/loginpage.html"><button class="addtocartbutton">
+                <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+                </button></a>
+              </section>
+</section>
+
+
+<!--vegetable supplier places-->
+
+<h1 class="topic" style="text-align: center; margin-top: 20px;">Vegetables Suppliers</h1>
+ <!---vetatble buying places-->
+
+<section id="testimonials">
+  <section  class="testimonials-header">
+    <span> Main Supplier</span>
+    <h1>Badulla</h1>
+  </section>
+  <section  style="margin-top: 20px;"    class="supplierphoto">
+    <img style="border-top-left-radius: 15px; border-bottom-right-radius: 15px;" class="districtvegetables" src="./vegitables/10.webp">
+  </section>
+
+  <section class="testimonials-box-conatiner">
+  <section class="testimonials-box">
+   <section class="box-top">
+   
+  
+   <section style="text-align: center;" class="reviews">
+   <i class="fas fa-star"></i>
+   <i class="fas fa-star"></i>
+   <i class="fas fa-star"></i>
+   <i class="fas fa-star"></i>
+   <i class="far fa-star"></i>
+   </section>
+</section>
+
+<section class="client-comment">
+<p>Badulla District in Sri Lanka boasts fertile soil, perfect for cultivating a variety of vegetables.
+  The vegetables grown in Badulla include cabbage, carrots, beans, leeks, and bell peppers, among others.</p>
+</section>
+
+</section>
+</section>
+<hr width="100%" size="8" color="white">
+<section id="testimonials">
+  <section class="testimonials-header">
+    <span>Second Supplier</span>
+    <h1>Nuwara Eliya</h1>
+  </section>
+  <section style="margin-top: 20px;" class="supplierphoto">
+    <img style="border-top-left-radius: 15px; border-bottom-right-radius: 15px;" class="districtvegetables" src="./vegitables/12.webp">
+  </section>
+  </section>
+
+  <section class="testimonials-box-conatiner">
+  <section class="testimonials-box">
+   <section class="box-top">
+  
+   <section style="text-align: center;" class="reviews">
+   <i class="fas fa-star"></i>
+   <i class="fas fa-star"></i>
+   <i class="fas fa-star"></i>
+   <i class="far fa-star"></i>
+   <i class="far fa-star"></i>
+   </section>
+   </section>
+
+<section class="client-comment">
+<p>Nuwara Eliya, located in the central highlands of Sri Lanka, is renowned for its high-altitude vegetable farming.
+  The cool and temperate climate of Nuwara Eliya, with its mild temperatures and ample rainfall, provides an ideal environment for growing a variety of vegetables.
+  Specializing in crops like carrots, leeks, potatoes, broccoli, and strawberries, Nuwara Eliya is known for its distinct vegetable varieties.</p>
+</section>
+
+</section>
+</section>
+
+<hr width="100%" size="8" color="white">
+<section id="testimonials">
+  <section class="testimonials-header">
+    <span> Third Supplier</span>
+    <h1>Jaffna</h1>
+  </section>
+  <section style="margin-top: 20px;" class="supplierphoto">
+    <img style="border-top-left-radius: 15px; border-bottom-right-radius: 15px;" class="districtvegetables" src="./vegitables/13.webp">
+  </section>
+  </section>
+
+  <section class="testimonials-box-conatiner">
+  <section class="testimonials-box">
+   <section class="box-top">
+  
+  
+   <section  class="reviews">
+   <i class="fas fa-star"></i>
+   <i class="fas fa-star"></i>
+   <i class="far fa-star"></i>
+   <i class="far fa-star"></i>
+   <i class="far fa-star"></i>
+   </section>
+   </section>
+
+<section class="client-comment">
+<p>Jaffna, located in the northern region of Sri Lanka, is renowned for its unique and flavorful vegetables cultivated in its sandy soils. Common vegetables grown in Jaffna include brinjal (eggplant), okra, snake gourd, and drumstick, among others. These vegetables are integral to Jaffna cuisine, adding depth and richness to traditional dishes like sambar, curry, and masala preparations.</p>
+</section>
+
+</section>
+</section>
+</section>
+
+<p style="text-align: center; margin-top: 20px;"><a href="#top">Top </a></p>
+
+<!--footer starts here-->
+
+
+<footer class="footer" style="margin-top: 20px;">
+  <section class="conatainer">
+    <section class="row">
+      <section class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+      
+        </ul>
+      </section>
+      <section class="footer-col">
+        <h4>Get Help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Order Status</a></li>
+        </ul>
+      </section>
+      <section class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Party Planning</a></li>
+          <li><a href="#">Catering</a></li>
+          <li><a href="#">Vegetable Suppliers</a></li>
+        </ul>
+      </section>
+      <section class="footer-col">
+        <h4>Follow Us</h4>
+
+        <ul class="socialmedia">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          
+        </ul>
+      </section>
+
+    </section>
+  </section>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     

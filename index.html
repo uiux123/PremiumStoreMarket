@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+
+  
+  <link rel="manifest" href="https://progressier.app/ZI7fsPiA9ZWsrD7KDWlD/progressier.json"/>
+  <script defer src="https://progressier.app/ZI7fsPiA9ZWsrD7KDWlD/script.js"></script> 
+<!---google fonts links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+  <!---Font awesome links for Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+  <!---Font awesome links for Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../html files/responsivecustomerreview.css">
+
+<!---Google Font links-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="./index.css">
+
+
+
+
+</head>
+<body>
+<section class="homepageheader">
+    
+  <nav id="top">
+      <a href="./index.html"><img   style="margin: 0px 0px 0px 10px ;"class="logo" src="./homepageimages/logo.webp"></a>
+      <section class="nav-links" id="navLinks">
+        <!---close icon for closing menubar and hide the Menu Bar in Mobile  Version -->
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+       <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./aboutuspage.html">About Us</a></li>
+        <li><a href="./vegetablesproductpage.html">Vegetable Items</a></li>
+        <li><a href="./Dairypage.html">Dairy Items</a></li>
+        <li><a href="./cosmeticspage.html">Cosmetic Items</a></li>
+        <li><a href="./Orderpage.html">Order Page</a></li>
+        <li><a href="./Registerpage.html">Registration Page</a></li>
+      </ul>
+
+      </section>
+
+ <!---hamburger icon  and open the Menu Bar in Mobile  Version -->
+    
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+    
+  </nav>
+
+
+
+    
+
+<!--homepage title and paragraphs-->
+
+<section class="text-box">
+<h1  class="shopname">Premier's Store</h1>
+<p style="font-size: 19px;" class="intropara">Welcome to Premier's Store, 
+  serving the community since 2002. 
+ Our award-winning online webstore and outstanding
+  customer reviews reflect our commitment to quality and service.</p>
+<button  class="home-button"> Anything You Need </button>
+</section>
+</section>
+  
+
+<!---javascript for menubar ,for open the menubar and for close the menubar when we clicking the hamburger icon and closing icon-->
+
+ <script>
+
+  var navLinks = document.getElementById("navLinks");
+ 
+ function showMenu(){
+   navLinks.style.right = "0";
+
+}
+
+function hideMenu(){
+   navLinks.style.right = "-200px";
+   
+}
+</script>
+
+
+<!--Creating image slider to display discounts and offers-->
+
+<h1 style="margin-top: 10px; text-align: center;"><b>Discount</b> Offers</h1>
+
+      <section id="slider">
+        <figure>
+          <img class="picture" src="./webbanners/1.webp">
+          <img class="picture" src="./webbanners/2.webp">
+          <img class="picture" src="./webbanners/3.webp">
+          <img class="picture" src="./webbanners/1.webp">
+          
+    
+        </figure>
+      </section>
+
+<!--Topic-->
+
+<h1 class="topic" style="margin-bottom: 20px; margin-top: 20px; text-align: center;">Top Selling Products</h1>
+
+
+
+<section class="homepageproducts">
+  <section style="flex: 1; position: relative;" class="itemcontainer">
+    <img class="item" src="./vegitables/1.webp">
+    <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/4.webp">
+    </section>
+    <section class="itemname">Carrots 100g</section>
+    <section class="itemprice"><s>Rs.380.00</s> <span class="price">Rs.250.00</span> </section>
+  
+      <a href="./Orderpage.html"><button class="addtocartbutton">
+      <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+      </button></a>
+    </section>
+    <section style="flex: 1; position: relative;" class="itemcontainer">
+      <img class="item" src="./vegitables/2.webp">
+      <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/3.webp">
+      </section>
+      <section class="itemname">Cabbage 100g</section>
+      <section class="itemprice"><s>Rs.300.00</s> <span class="price">Rs.250.00</span> </section>
+    
+      <a href="../html files/loginpage.html"><button class="addtocartbutton">
+        <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+        </button></a>
+      </section>
+      <section style="flex: 1; position: relative;" class="itemcontainer">
+        <img class="item" src="./Dairy/2.webp">
+        <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/4.webp">
+        </section>
+        <section class="itemname">Yougurt </section>
+        <section class="itemprice"><s>Rs.80</s> <span class="price">Rs.40</span> </section>
+      
+        <a href="../html files/loginpage.html"><button class="addtocartbutton">
+          <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+          </button></a>
+        </section>
+        <section style="flex: 1; position: relative;" class="itemcontainer">
+          <img class="item" src="./newimages/7.webp">
+          <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/4.webp">
+          </section>
+          <section class="itemname">Perfume </section>
+          <section class="itemprice"><s>Rs.3000</s> <span class="price">Rs.2700</span> </section>
+        
+          <a href="../html files/loginpage.html"><button class="addtocartbutton">
+            <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+            </button></a>
+          </section>
+
+
+      </section>
+
+<!---for store products items-->
+
+<section style="margin-top: 15px;" class="homepageproducts">
+<section style="flex: 1; position: relative;" class="itemcontainer">
+  <img class="item" src="./cosmeticitems/4.webp">
+  <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/1.webp">
+  </section>
+  <section class="itemname">Lipstick</section>
+  <section class="itemprice"><s>Rs.1380.00</s> <span class="price">Rs.1250.00</span> </section>
+
+  <a href="../html files/loginpage.html"><button class="addtocartbutton">
+    <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+    </button></a>
+  </section>
+  <section style="flex: 1; position: relative;" class="itemcontainer">
+    <img class="item" src="./newimages/1.webp">
+    <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/4.webp">
+    </section>
+    <section class="itemname">Bellpaper 100g </section>
+    <section class="itemprice"><s>Rs.350</s> <span class="price">Rs.240</span> </section>
+  
+    <a href="../html files/loginpage.html"><button class="addtocartbutton">
+      <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+      </button></a>
+    </section>
+  <section style="flex: 1; position: relative;" class="itemcontainer">
+    <img class="item" src="./vegitables/4.webp">
+    <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/4.webp">
+    </section>
+    <section class="itemname">Beans</section>
+    <section class="itemprice"><s>Rs.330.00</s> <span class="price">Rs.250.00</span> </section>
+  
+    <a href="../html files/loginpage.html"><button class="addtocartbutton">
+      <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+      </button></a>
+    </section>
+    <section style="flex: 1; position: relative;" class="itemcontainer">
+      <img class="item" src="./Dairy/6.webp">
+      <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/3.webp">
+      </section>
+      <section class="itemname">Milk packets</section>
+      <section class="itemprice"><s>Rs.100.00</s> <span class="price">Rs.50.00</span> </section>
+    
+      <a href="../html files/loginpage.html"><button class="addtocartbutton">
+        <img class="addtocart" src="./icons/10.webp"><span class="text">Add to Cart</span>
+        </button></a>
+      </section>
+    </section>
+
+
+
+
+<!--monthly special items-->
+<h1 class="topic" >Monthly Special</h1>
+<section class="homepageproducts">
+  <section style="flex: 1; position: relative;" class="itemcontainer">
+    <img class="item" src="./discountlabels/8.webp">
+    <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/4.webp">
+    </section>
+    <section class="itemname">
+      <ol>
+        <li>Best Price</li>
+        <li>Tasty 100%</li>
+        <li>Best Snack</li>
+        <li>Quality Ingredients</li>
+      </ol>
+
+    </section>
+    
+    </section>
+    <section style="flex: 1; position: relative;" class="itemcontainer">
+      <img class="item" src="./newimages/7.webp">
+      <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/4.webp">
+      </section>
+      <section class="itemname">
+        <ol>
+          <li>Best Price</li>
+          <li>Quality 100%</li>
+          <li>Original version</li>
+          <li>Quality Ingredients</li>
+        </ol>
+  
+      </section>
+      
+      </section>
+    <section style="flex: 1; position: relative;" class="itemcontainer">
+      <img class="item" src="./discountlabels/6.webp">
+      <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/4.webp">
+      </section>
+      <section class="itemname">
+        <ul style="list-style: square;">
+          <li>Best Price</li>
+          <li>Quality Ingredients</li>
+          <li>Customizable Flavors</li>
+          <li>Best Discount</li>
+        </ul>
+
+
+
+      </section>
+      
+      </section>
+      <section style="flex: 1; position: relative;" class="itemcontainer">
+        <img class="item" src="./discountlabels/7.webp">
+        <section class="discountlabel" style="position: absolute;"><img style="width: 55px; height: 55px;" src="./discountlabels/4.webp">
+        </section>
+        <section class="itemname">
+          <ol>
+            <li>Best Price</li>
+            <li>Convenient and Fast</li>
+            <li>Variety of Options</li>
+            <li>Only This Month</li>
+          </ol>
+        </section>
+
+
+      </section>
+
+
+ 
+    </section>
+
+
+<!---heading-->
+
+    <h1 style="text-align: center; margin-bottom: 20px;" class="topic">Customer Reviews</h1>
+
+
+<!---Customer reviews-->
+
+
+<main class="customerrev">
+  <section class="cusrev">
+      <article>
+          <figure>
+              <img class="profile" src="./profileimages/1.webp" alt="Customer 1" width="100" height="100">
+              <figcaption>Jane Doe</figcaption>
+          </figure>
+          <blockquote>
+              <p>This supermarket has the best selection of fresh produce. The staff are always friendly and helpful!</p>
+          </blockquote>
+      </article>
+
+      <article>
+          <figure>
+              <img class="profile" src="./profileimages/2.webp" alt="Customer 2" width="100" height="100">
+              <figcaption>John Smith</figcaption>
+          </figure>
+          <blockquote>
+              <p>I love the loyalty program. I’ve saved so much money with the cashback offers and discounts.</p>
+          </blockquote>
+      </article>
+
+      <article>
+          <figure>
+              <img class="profile" src="./profileimages/3.webp" alt="Customer 3" width="100" height="100">
+              <figcaption>Mary Johnson</figcaption>
+          </figure>
+          <blockquote>
+              <p>Great prices, excellent customer service, and a wide range of products. Highly recommend this supermarket!</p>
+          </blockquote>
+      </article>
+  </section>
+</main>
+
+
+<p style="text-align: center; margin-top: 20px;"><a href="#top">Top </a></p>
+
+
+
+<!---footer styling starts here-->
+
+
+<footer class="footer">
+  <section class="conatainer">
+    <section class="row">
+      <section class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+      
+        </ul>
+      </section>
+      <section class="footer-col">
+        <h4>Get Help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Order Status</a></li>
+        </ul>
+      </section>
+      <section class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Party Planning</a></li>
+          <li><a href="#">Catering</a></li>
+          <li><a href="#">Vegetables Suppliers</a></li>
+        </ul>
+      </section>
+      <section class="footer-col">
+        <h4>Follow Us</h4>
+
+        <ul class="socialmedia">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </section>
+
+    </section>
+  </section>
+</footer>
+</body>
+</html>
